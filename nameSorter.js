@@ -5,7 +5,7 @@
  * @returns {string} of sorted names
  */
 
-export default function nameSorter(unsortedNames) {
+const nameSorter = (unsortedNames) => {
   const namesArray = unsortedNames.split("\n");
 
   const sortedNames = namesArray.sort((a, b) => {
@@ -24,4 +24,6 @@ export default function nameSorter(unsortedNames) {
   });
 
   return sortedNames.join("\n");
-}
+};
+
+module.exports = { nameSorter };
