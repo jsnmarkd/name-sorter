@@ -1,6 +1,6 @@
 <h1 align="center"> Name Sorter </h1>
 
-A command-line tool to sort a list of names by last name. The sorted names are printed to the console and written to a file called <strong>"sorted-names-list.txt"</strong>.
+A command-line tool to sort a list of names by last name. The sorted names are printed to the console and written to a file called <strong>`sorted-names-list.txt`</strong>.
 
 <p align="center">
   • <a href="#prerequisites">Prerequisites</a> •
@@ -20,7 +20,7 @@ A command-line tool to sort a list of names by last name. The sorted names are p
 
 ## Usage
 
-1. Prepare a text file (`unsorted-names-list.txt`) containing the list of names you want to sort. Each name should be on a separate line.
+1. Prepare a text file `unsorted-names-list.txt` containing the list of names you want to sort.
 2. Open a terminal and navigate to the project directory.
 3. Run the following command to install the required dependencies:
 ```sh
