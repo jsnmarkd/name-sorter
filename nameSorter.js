@@ -1,4 +1,11 @@
-const nameSorter = (unsortedNames) => {
+/**
+ * Returns a string of names sorted by lastname
+ *
+ * @param {string} unsortedNames - From txt file
+ * @returns {string} of sorted names
+ */
+
+export default function nameSorter(unsortedNames) {
   const namesArray = unsortedNames.split("\n");
 
   const sortedNames = namesArray.sort((a, b) => {
@@ -16,17 +23,5 @@ const nameSorter = (unsortedNames) => {
     return givenNamesA.join(" ").localeCompare(givenNamesB.join(" "));
   });
 
-  return sortedNames.join('\n');
-};
-
-console.log(nameSorter(`Janet Parsons
-Vaughn Lewis
-Adonis Julius Archer
-Shelby Nathan Yoder
-Marin Alvarez
-London Lindsey
-Beau Tristan Bentley
-Leo Gardner
-Hunter Uriah Mathew Clarke
-Mikayla Lopez
-Frankie Conner Ritter`));
+  return sortedNames.join("\n");
+}
